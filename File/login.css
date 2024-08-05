@@ -1,0 +1,61 @@
+html {
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+#login {
+    margin: 20vh auto 0 auto;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.name-heading {
+    font-weight: 600;
+}
+input {
+    height: 40px;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+input:focus {
+    border-radius: 5px;
+    border: none;
+}
+.form-heading {
+    text-align: center;
+    font-size: 20px;
+}
+.form-heading p {
+    color: #ccc;
+}
+.form-fullname,
+.form-email,
+.form-password,
+.form-repassword {
+    margin-top: 20px;
+}
+.button-login {
+    margin-top: 20px;
+}
+button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #2cddc1;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px;
+}
+#login.invalid {
+    border: 1px solid red;
+}
+#login.invalid .form-message {
+    color: red;
+}

@@ -1,0 +1,150 @@
+:root {
+    --while-colour:#fff;
+    --black-colour:#000;
+    --text-colour:#333;
+    --header-height:180px;
+    --narbar-height:34px;
+    --header-with-search-height:calc(var(--header-height) - var(--narbar-height));
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    line-height: 16px;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid {
+    width: 1800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-top: 30px;
+}
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.666%;
+}
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.news {
+    display: none;
+}
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.333%;
+}
+/* Btn */
+.btn {
+    height: 45px;
+    min-width: 200px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 2px;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    outline: none;
+    padding: 0 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* Animation */
+@keyframes headerGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes Grow {
+    from {
+        transform: scale(var(--grow-from));
+    }
+    to {
+        transform: scale(var(--grow-to));
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Select input */
+.select-input {
+    height: 45px;
+    min-width: 200px;
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: var(--while-colour);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.select-input:hover .select-input__list {
+    display: block;
+}
+.select-input__list::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    top: -10px;
+    left: 0;
+    position: absolute;
+}
+.select-input__labal {
+    font-size: 0.8rem;
+}
+.select-input__icon {
+    font-size: 0.6rem;
+    color: rgb(131, 131, 131);
+}
+.select-input__list {
+    position: absolute ;
+    left: 0;
+    right: 0;
+    top: 47%;
+    border-radius: 2px;
+    background-color: var(--while-colour);
+    list-style: none;
+    padding-left: 0;
+    padding: 8px 16px;
+    z-index: 2;
+    display: none;
+}
+.select-input__link {
+    text-decoration: none;
+    color: var(--black-colour);
+    font-size: 0.7rem;
+    line-height: 40px;
+}
+.select-input__link:hover {
+    color: #f53e2d;
+}

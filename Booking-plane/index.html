@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assent/css/main.css">
+    <link rel="stylesheet" href="./assent/css/base.css">
+    <title>Booking-Plane</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <img src="./assent/img/HPLane.png" alt="HPlane">            
+                    </div>
+                    <ul class="header__list">
+                        <li>
+                            <a href="" class="header__icon">
+                                <i class="fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="header__icon">
+                                <i class="fa-solid fa-plane-up"></i>
+                                My Trip
+                            </a>
+                        </li>
+                        <li>
+                            <button class="header__button btn">
+                                Sign Up
+                            </button>
+                        </li>
+                        <li>
+                            <button class="header__button btn header__button--modifier">
+                                Log In
+                            </button>
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid">
+                <div class="container__main">
+                    <img id="img__plane" src="./assent/img/booking-plane.png" alt="">
+                    <div class="container__booking">
+                        <div class="container__booking-from container--space ">
+                            <h1 class="container__font-booking">From</h1>
+                            <select name="Nơi đón " class="box" required>
+                                <option value="1">Japan</option>
+                                <option value="2">Ohio</option>
+                                <option value="3">Việt Nam</option>
+                                <option value="4">Madrid</option>
+                                <option value="5">New York</option>
+                                <option value="6">Doha</option>
+                                <option value="7">Thái Lan</option>
+                                <option value="8">Campuchia</option>
+                            </select>
+                            
+                        </div>
+                        <div class="container__booking-to container--space ">
+                            <h1 class="container__font-booking">To</h1>
+                            <select name="Nơi đến " class="box" required>
+                                <option value="1">Việt Nam</option>
+                                <option value="2">Ohio</option>
+                                <option value="3">Japan</option>
+                                <option value="4">Madrid</option>
+                                <option value="5">New York</option>
+                                <option value="6">Doha</option>
+                                <option value="7">Thái Lan</option>
+                                <option value="8">Campuchia</option>
+                            </select>
+                        </div>
+                        <div class="container__booking-departure container--space ">
+                            <h1 class="container__font-booking">Departure</h1>
+                            <form action="" method="post">
+                                <input type="date" name="check-in" class="box" required>
+                            </form>
+
+                        </div>
+                        <div class="container__booking-return container--space ">
+                            <h1 class="container__font-booking">Return</h1>
+                            <form action="" method="post">
+                                <input type="date" name="check-in" class="box" required>
+                            </form>
+                        </div>
+                        <a href="" class="container__booking-button container--space">
+                           <button class="container__booking-next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="container__popular">
+                    <h1>Popular Routes</h1>
+                    <div class="container__popular-image">
+                        <a href="" class="img-place-link">
+                            <img class="img-place" src="./assent/img/NewYorkCity.png" alt="">
+                            <h1>New York City</h1>
+                            <p>From $170</p>
+                        </a>
+                        <a href="" class="img-place-link">
+                            <img class="img-place" src="./assent/img/Madrid.png" alt="">
+                            <h1>Madrid</h1>
+                            <p>From $30</p>
+                        </a>
+                        <a href="" class="img-place-link">
+                            <img class="img-place" src="./assent/img/Japan.png" alt="">
+                            <h1>Japan</h1>
+                            <p>From $30</p>
+                        </a>
+                        <a href="" class="img-place-link">
+                            <img class="img-place" src="./assent/img/Doha.png" alt="">
+                            <h1>Doha</h1>
+                            <p>From $50</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container__info">
+                    <div class="container__info-item">
+                        <i class="fa-solid fa-medal"></i>
+                        <h1>Guarantee of the best price</h1>
+                        <p>We offer only the best deals, if you find the same flight cheaper elsewhere, contact us</p>
+                    </div>
+                    <div class="container__info-item">
+                        <i class="fa-solid fa-wallet"></i>
+                        <h1>Refunds & cancellations</h1>
+                        <p>Your flight got cancalled? ,we have you covered with our instant refuse services</p>
+                    </div>
+                    <div class="container__info-item">
+                        <i class="fa-solid fa-mask-face"></i>
+                        <h1>Covid-19 information</h1>
+                        <p>Read about all the travel restrictions due to covid 19 that may affect your flight</p>
+                    </div>
+                </div>
+                <div class="container__download">
+                    <img src="./assent/img/Get Started.png" alt="">
+                    <button>Download in Mobile Store</button>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer-list">
+                    <div class="footer-item">
+                        <img src="./assent/img/HPLane.png" alt="">
+                    </div>
+                    <div class="footer-item">
+                        <ul>
+                            <li>Help</li>
+                            <li>FAQ</li>
+                            <li>Customer Service</li>
+                            <li>How to guides</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__form">
+                <div class="modal-form__container">
+                    <div class="modal-form__heading">
+                        <p>Đăng nhập</p>
+                        <a href="">
+                            <i class="fa-solid fa-circle-question"></i>
+                            Trợ giúp
+                        </a>
+                    </div>
+    
+                    <div class="modal-form__form">
+                        <div class="modal-form__group">
+                            <input type="text" placeholder="Nhập email của bạn" class="modal-form__input">
+                        </div>
+                        <div class="modal-form__group">
+                            <input type="password" placeholder="Nhập mật khẩu của bạn" class="modal-form__input">
+                        </div>
+                        <div class="modal-form__group">
+                            <input type="password" placeholder="Nhập lại mật khẩu của bạn" class="modal-form__input">
+                        </div>
+                    </div>
+    
+                    <div class="modal-form-aside">
+                        <p class="modal-form_polify-text">Bằng việc đăng kí,bạn đã đồng ý với Shopee về
+                            <a class="modal-form_polify-text-link" href="">Điều khoản dịch vụ</a>&
+                            <a class="modal-form_polify-text-link" href="">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+    
+                    <div class="modal-form__button">
+                        <button class="btn">Trở lại</button>
+                        <button class="btn btn-modifier">Đăng kí</button>
+                    </div>
+                </div>
+
+                <div class="modal-form__footer">
+                    <div class="button-contact">
+                        <a class="btn_contact" href="">
+                            <i class="fa-brands fa-google"></i>
+                            Kết nới với Google
+                        </a>
+                    </div>
+                    <div class="button-contact button-contact--modifier">
+                        <a class="btn_contact btn_contact--modifier" href="">
+                            <i class="fa-brands fa-facebook"></i>
+                            Kết nối với facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const modal = document.querySelector(".modal");
+        const logIN = document.querySelector(".header__button");
+        const openModal = document.querySelector(".modal__overlay");
+        logIN.addEventListener("click",function() {
+            modal.classList.add("open");
+        })
+        openModal.addEventListener("click",function() {
+            modal.classList.remove("open");
+        })
+
+    </script>
+</body>
+</html>

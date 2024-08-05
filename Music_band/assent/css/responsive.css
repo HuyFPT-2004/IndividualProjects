@@ -1,0 +1,98 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+/* Tablet */
+@media (min-width: 720px) and (max-width: 1024px) {
+    .content-section {
+        width: 1224px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* Mobile */
+@media (max-width: 720px) {
+    .header {
+        overflow: hidden;
+    }
+    .header-item {
+        display: block;
+    }
+    .header-search {
+        display: none;
+    }
+    .header-menu-icon {
+        color: white;
+        font-size: 20px;
+    }
+    .header-menu {
+        display: block;
+        float: right;
+        padding:  18px 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .main {
+        overflow: hidden;
+    }
+    .content-section {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-menu:hover{
+        background-color: #ccc;
+    }
+    .header-menu:hover .header-menu-icon {
+        color: black;
+    }
+    .header-list {
+        display: block;
+    }
+    .header-item:first-child {
+        display: inline-block;
+    }
+    .header_icon-list {
+        position: initial;
+    }
+    .place-item {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .place-item img {
+        height: 500px;
+    }
+    .member-item {
+        width: 100%;
+        font-size: 30px;
+    }
+    .member-item img {
+        width: 100%;
+    }
+    .content-contact {
+        flex-direction: column;
+    }
+    .place-buy {
+        width: 100%;
+        text-align: center;
+    }
+    .form-control {
+        width: 100%;
+    }
+    .content-name-message {
+        display: block;
+    }
+    .form-send {
+        width: 100%;
+    }
+    .content-login {
+        padding: 0;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+}
