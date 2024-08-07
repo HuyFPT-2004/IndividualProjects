@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assent/css/main.css">
     <link rel="stylesheet" href="./assent/css/base.css">
+    <link rel="stylesheet" href="./assent/css/responsive.css">
     <title>Booking-Plane</title>
 </head>
 <body>
@@ -51,8 +52,8 @@
             <div class="grid">
                 <div class="container__main">
                     <img id="img__plane" src="./assent/img/booking-plane.png" alt="">
-                    <div class="container__booking">
-                        <div class="container__booking-from container--space ">
+                    <ul class="container__booking">
+                        <li class="container__booking-from container--space ">
                             <h1 class="container__font-booking">From</h1>
                             <select name="Nơi đón " class="box" required>
                                 <option value="1">Japan</option>
@@ -65,39 +66,39 @@
                                 <option value="8">Campuchia</option>
                             </select>
                             
-                        </div>
-                        <div class="container__booking-to container--space ">
+                        </li>
+                        <li class="container__booking-to container--space ">
                             <h1 class="container__font-booking">To</h1>
                             <select name="Nơi đến " class="box" required>
                                 <option value="1">Việt Nam</option>
                                 <option value="2">Ohio</option>
                                 <option value="3">Japan</option>
-                                <option value="4">Madrid</option>
+                                <option value="4">Madrid<container__booking-button/option>
                                 <option value="5">New York</option>
                                 <option value="6">Doha</option>
                                 <option value="7">Thái Lan</option>
                                 <option value="8">Campuchia</option>
                             </select>
-                        </div>
-                        <div class="container__booking-departure container--space ">
+                        </li>
+                        <li class="container__booking-departure container--space ">
                             <h1 class="container__font-booking">Departure</h1>
                             <form action="" method="post">
                                 <input type="date" name="check-in" class="box" required>
                             </form>
 
-                        </div>
-                        <div class="container__booking-return container--space ">
+                        </li>
+                        <li class="container__booking-return container--space ">
                             <h1 class="container__font-booking">Return</h1>
                             <form action="" method="post">
                                 <input type="date" name="check-in" class="box" required>
                             </form>
-                        </div>
+                        </li>
                         <a href="" class="container__booking-button container--space">
                            <button class="container__booking-next">
                             <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </a>
-                    </div>
+                    </ul>
                 </div>
                 <div class="container__popular">
                     <h1>Popular Routes</h1>
@@ -143,7 +144,7 @@
                 </div>
                 <div class="container__download">
                     <img src="./assent/img/Get Started.png" alt="">
-                    <button>Download in Mobile Store</button>
+                    <a>Download in Mobile Store</a>
                 </div>
             </div>
         </div>

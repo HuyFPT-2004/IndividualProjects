@@ -1,0 +1,19 @@
+@media (min-width: 1026px) {
+
+}
+
+/* Tablet */
+@media (min-width: 720px) and (max-width: 1025px) {
+    .container__popular-image {
+        flex-wrap: wrap;
+    }
+    .header,.container {
+        padding: 20px;
+    }
+    .container__info {
+        flex-wrap: wrap;
+    }
+    .footer-list {
+        justify-content: space-around;
+    }
+}

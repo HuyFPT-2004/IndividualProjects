@@ -47,7 +47,6 @@
 /* Container */
 .container__main {
     width: 100%;
-    position: relative;
 }
 #img__plane {
     width:120rem ;
@@ -56,17 +55,16 @@
 }
 .container__booking {
     background-color: var(--font-color);
-    position: absolute;
-    bottom: 10rem;
-    left: 10%;
+    position: relative;
+    bottom: 23rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 13rem;
-    max-height: 100%;
-    max-width: 74%;
     border-radius: 1.5rem;
-    transform: translateX(-10%);
+    margin: 0 10px auto;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 0.2px;
 }
 .container__font-booking {
     font-weight: 100;
@@ -83,12 +81,13 @@
 .container--space:nth-child(1),
 .container--space:nth-child(2),
 .container--space:nth-child(3) {
-    width: 20%;
-    margin-left: 2rem;
+    padding: 2rem;
+    flex: 1;
     border-right: #ccc solid 1px;
 }
 .container--space:nth-child(4) {
     width: 20%;
+    flex: 1;
     margin-left: 2rem;
 }
 .container__booking-next {
@@ -172,10 +171,10 @@
     border-radius: 15px;
     max-width: 100%;
 }
-.container__download button {
-    position: absolute;
-    left: 10%;
-    transform: translateX(-10%);
+.container__download a {
+    position: relative;
+    left: 3%;
+    float: left;
     bottom: 8rem;
     font-size: 2rem;
     padding: 2rem 4rem;
