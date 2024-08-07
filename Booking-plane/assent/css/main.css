@@ -20,6 +20,7 @@
 }
 .header__list li {
     margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 .header__icon {
     margin-right: 3rem;
@@ -277,7 +278,7 @@
 .button-contact {
     margin: 0 20px;
     background-color: rgb(58, 90, 152);    ;
-    padding: 12px 50px;
+    padding: 12px 20px;
     border-radius: 5px;
 }
 .button-contact a {

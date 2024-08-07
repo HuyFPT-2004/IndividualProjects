@@ -17,3 +17,23 @@
         justify-content: space-around;
     }
 }
+@media (max-width: 720px) {
+    .container__popular-image {
+        flex-wrap: wrap;
+    }
+    .header,.container {
+        padding: 20px;
+    }
+    .container__info {
+        flex-wrap: wrap;
+    }
+    .footer-list {
+        justify-content: space-around;
+    }
+    .header__list {
+        flex-wrap: wrap;
+    }
+    .header__icon {
+        margin-right: 8rem;
+    }
+}
