@@ -1,0 +1,94 @@
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .contact .form textarea {
+        width: 95%;
+    }
+    .model .link-by-2 .link-facebook,
+    .model .link-by-2 .link-google {
+        justify-content: center;
+        text-align: center;
+    }
+    .model .link-by-1,
+    .model .link-by-2 {
+    justify-content: center;
+    padding: 2rem 3rem;
+    }
+}
+@media(max-width:768px){
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .flex .navbar {
+        position: fixed;
+        top: 0; left: 120%;
+        height: 100vh;
+        width: 100%;
+        z-index: 2000;
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        transition: .2s linear;
+    }
+    .header .flex .navbar a {
+        font-size: 4rem;
+    }
+    .header .flex .navbar.active {
+        left: 0;
+    }
+    .home .flex .content h3 {
+        font-size: 3.5rem;
+    }
+    .contact .form textarea {
+        width: 94%;
+    }
+    .footer .creadit {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer .box-container {
+        align-items: center;
+        text-align: center;
+    }
+    .model .link-by-2 .link-facebook,
+    .model .link-by-2 .link-google {
+        justify-content: center;
+        padding: 2rem 3rem;
+        text-align: center;
+    }
+    .model .link-by-1,
+    .model .link-by-2 {
+    justify-content: center;
+    }
+}
+@media(max-width:450px){
+    html {
+        font-size: 50%;
+    }
+    .contact .form textarea {
+        width: 94%;
+    }
+    .footer .credit {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer .box-container {
+        align-items: center;
+    }
+    .footer .box-container .box:last-child {
+        text-align: center;
+    }
+    .model .link-by-2 .link-facebook,
+    .model .link-by-2 .link-google {
+        justify-content: center;
+        padding: 2rem 2.5rem;
+        text-align: center;
+    }
+    .model .link-by-1,
+    .model .link-by-2 {
+    justify-content: center;
+    }
+}
